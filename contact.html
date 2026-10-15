@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - EventHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-       <nav>
-
-        <h2>EventHub</h2>
-
-        <div>
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-    </nav>
-
-     <section class="events-section">
-
-        <h1>All Events</h1>
-
-        <p>Explore all upcoming university events.</p>
-
-    </section>
-
-
-    <footer>
-
-        <p>© 2026 EventHub. All rights reserved.</p>
-
-    </footer>
-
+<body data-page="contact">
+<main>
+<section class="section narrow">
+  <h1>Contact us</h1>
+  <p class="muted">Questions or feedback? Send us a message.</p>
+  <form id="contactForm" class="form card-box" novalidate>
+    <label>Message
+      <textarea id="cMsg" rows="5" placeholder="How can we help?"></textarea>
+      <small class="error" id="cErr"></small>
+    </label>
+    <button class="btn" type="submit">Send message</button>
+  </form>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,49 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Events - EventHub</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - EventHub</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <nav>
-
-        <h2>EventHub</h2>
-
-        <div>
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-    </nav>
-
-
-    <section class="events-section">
-
-        <h1>All Events</h1>
-
-        <p>Explore all upcoming university events.</p>
-
-    </section>
-
-
-    <footer>
-
-        <p>© 2026 EventHub. All rights reserved.</p>
-
-    </footer>
-
+<body data-page="events">
+<main>
+<section class="section">
+  <div class="page-head">
+    <div><h1>All events</h1><p class="muted">Search, join, or add your own event.</p></div>
+    <button class="btn" id="addBtn">+ Add event</button>
+  </div>
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search by title, place or description" aria-label="Search events">
+    <div class="chips" id="filters">
+      <button class="chip active" data-f="all">All</button>
+      <button class="chip" data-f="upcoming">Upcoming</button>
+      <button class="chip" data-f="joined">Joined</button>
+      <button class="chip" data-f="mine">My events</button>
+    </div>
+  </div>
+  <div class="event-container" id="eventList"></div>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in - EventHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+<main>
+<section class="login-wrap">
+  <form id="loginForm" class="form card-box" novalidate>
+    <h1>Welcome to EventHub</h1>
+    <p class="muted">Enter your name and email to continue.</p>
+    <label>Name
+      <input id="lName" type="text" autocomplete="name" placeholder="e.g. Frengky">
+      <small class="error" id="nErr"></small>
+    </label>
+    <label>Email
+      <input id="lEmail" type="email" autocomplete="email" placeholder="you@example.com">
+      <small class="error" id="eErr"></small>
+    </label>
+    <button class="btn" type="submit">Sign in</button>
+  </form>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
